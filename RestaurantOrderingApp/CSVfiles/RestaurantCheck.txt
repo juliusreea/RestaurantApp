@@ -1,0 +1,10 @@
+Pizza, price: 7,5, items ordered: 1
+MacNCheese, price: 5,5, items ordered: 1
+Beef Steak, price: 12, items ordered: 1
+Beer, price: 3,5, items ordered: 1
+Wine, price: 4,5, items ordered: 2
+Apple Juice, price: 2, items ordered: 1
+
+2022-03-18 11:17:23
+total amount of 39,5 euro
+2 persons were seated at Table [1]

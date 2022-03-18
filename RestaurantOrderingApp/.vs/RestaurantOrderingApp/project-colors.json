@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "276feb49-a8ee-4003-b70f-d725f5ec52cf": {
+      "ProjectGuid": "276feb49-a8ee-4003-b70f-d725f5ec52cf",
+      "DisplayName": "RestaurantOrderingApp",
+      "ColorIndex": 0
+    },
+    "f9c9cda4-e3a4-41d0-a7cd-0869dc5db909": {
+      "ProjectGuid": "f9c9cda4-e3a4-41d0-a7cd-0869dc5db909",
+      "DisplayName": "RestaurantWF",
+      "ColorIndex": 1
+    },
+    "60644da6-8700-4c96-a4cd-f45bb98f396b": {
+      "ProjectGuid": "60644da6-8700-4c96-a4cd-f45bb98f396b",
+      "DisplayName": "RestaurantOrderingAppUnitTests",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
