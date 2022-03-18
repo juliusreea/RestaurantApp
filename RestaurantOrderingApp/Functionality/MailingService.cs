@@ -10,14 +10,14 @@ namespace RestaurantOrderingApp.Functionality
         
         public void MailSendInquiry()
         {
-            Console.WriteLine("Do you want receipt sent to your email? y/n");
+            Console.WriteLine("Does client want check to be sent to email? y/n");
             string answer = Console.ReadLine().Trim().ToLower();
             bool mailSend = true;
             while (mailSend)
             {
                 if (answer == "y")
                 {
-                    Console.WriteLine("enter your email if you want check sent");
+                    Console.WriteLine("enter email");
                     string emailAddress = Console.ReadLine();
                     SendEmail(emailAddress);
                     Console.ReadKey();
@@ -46,7 +46,8 @@ namespace RestaurantOrderingApp.Functionality
             SmtpClient client = new SmtpClient("smtp.gmail.com");
             // Credentials are necessary if the server requires the client
             // to authenticate before it will send email on the client's behalf.
-            var file = new Attachment(@"C:\Users\Dell\source\repos\PersonalLearningMaterial\RestaurantOrderingApp\CSVfiles\CustomerCheck.txt");
+            FilePath filePath = new FilePath("CustomerCheck.txt");
+            var file = new Attachment(filePath.Path);
             message.Attachments.Add(file);
             client.Port = 587;
             client.Credentials = new NetworkCredential(from, "slaptazodis12");
