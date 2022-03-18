@@ -11,7 +11,6 @@ namespace RestaurantOrderingApp.Models
 
         public Order()
         {
-
         }
         public decimal ReturnTotal()
         {

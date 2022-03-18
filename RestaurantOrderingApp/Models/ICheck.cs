@@ -11,8 +11,5 @@ namespace RestaurantOrderingApp.Models
         public List<string> Orders { get; set; }
 
         public void PrintCheck(Table table);
-
-        
-
     }
 }

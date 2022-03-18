@@ -7,7 +7,6 @@ namespace RestaurantOrderingApp.Functionality
 {
     internal class MailingService:IEmail
     {
-        
         public void MailSendInquiry()
         {
             Console.WriteLine("Does client want check to be sent to email? y/n");
@@ -20,7 +19,6 @@ namespace RestaurantOrderingApp.Functionality
                     Console.WriteLine("enter email");
                     string emailAddress = Console.ReadLine();
                     SendEmail(emailAddress);
-                    Console.ReadKey();
                     mailSend = false;
                 }
                 else if (answer == "n")
@@ -34,7 +32,6 @@ namespace RestaurantOrderingApp.Functionality
                     break;
                 }
             }
-                
         }
         public void SendEmail(string email)
         {
@@ -62,7 +59,6 @@ namespace RestaurantOrderingApp.Functionality
             {
                 Console.WriteLine(ex.Message);
             };
-            
         }
     }
 }

@@ -38,7 +38,7 @@ namespace RestaurantOrderingApp
                     if (int.TryParse(Console.ReadLine(), out int tableMenuInput)) { } else { consoleInfo.WrongInput(); };
                     switch (tableMenuInput)
                     {
-                        case 1:                                  //seating customers at the table 
+                        case 1:                              //seating customers at the table 
                             while (true)
                             {
                                 Console.WriteLine("enter number of customers at the table");
@@ -50,7 +50,7 @@ namespace RestaurantOrderingApp
                                 }
                             }
                             break;
-                        case 2:                                  //adding foods to order
+                        case 2:                               //adding foods to order
                             while (true)
                             {
                                 Console.Clear();
@@ -71,7 +71,7 @@ namespace RestaurantOrderingApp
                                 }
                             }
                             break;
-                        case 3:                             //adding drink to order
+                        case 3:                          //adding drink to order
                             while (true)
                             {
                                 Console.Clear();
@@ -92,11 +92,13 @@ namespace RestaurantOrderingApp
                                 }
                             }
                             break;
-                        case 4:                        //view selected table order list with total
+                        case 4:                      //view selected table order list with total
                             tableRepo.DisplayOrder(tableSelected - 1);
                             Console.ReadKey();
                             break;
-                        case 5:                      //write check text to file of selected table also frees table
+                        case 5:                      //write check text to file of selected table
+                                                     //Mail sending option
+                                                     //also frees table
                             checkRestaurant.PrintCheck(tableRepo.Tables[tableSelected - 1]);
                             checkCustomer.PrintCheck(tableRepo.Tables[tableSelected - 1]);
                             tableRepo.ClearTable(tableSelected - 1);
